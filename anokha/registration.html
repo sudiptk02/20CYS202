@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anokha Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/ano.jpg">
+   </head>
+   <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+.wrapper{
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070f4;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #0e4bf1;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+   </style>
+<body>
+  <div class="wrapper">
+    <h2> Anokha Registration</h2>
+    <form action="#">
+        <p>Personal Information</p>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Age" required>
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Personal Number" required>
+      </div>
+      <p>GENDER?</p>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">MALE</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">FEMALE</label><br>
+      <div class="policy">
+        <input type="checkbox">
+        <br>
+        <form action="/action_page.php">
+            <label for="cars">STREAM:     </label><br>
+            <select name="cars" id="cars">
+              <option value="volvo">CSE</option>
+              <option value="saab">CSE-AI</option>
+              <option value="opel">CSE-CYS</option>
+              <option value="audi">ELC</option>
+              <option value="volvo">EEE</option>
+              <option value="volvo">MEL</option>
+              <option value="volvo">CCE</option>
+            </select>
+            <br><br>
+      </div>
+      <p>What is your year of Study?</p>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">1st YEAR</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">2nd YEAR</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">3rd YEAR</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">4th YEAR</label><br><br>
+      <p>Please select the department you would like to join under?:</p>
+      <br>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">Research Department</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Public Speaking</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Photography & Videography</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">Technical Department</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">Event Management</label>
+      <br>
+      <label for="birthday">Choose Event Date:</label>
+      </form><br>
+  <input type="date" id="Event" name="Choose your date">
+  <br><br>
+  <p><label for="w3review">About You</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">Tell more about yourself.</textarea>
+  <p>Choose File button to upload a file:</p>
+
+  <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename"><br>
+  <div class="input-box button">
+        <br>
+        <input type="Submit" value="Register Now">
+      </div>
+      <br>
+      <div class="text">
+        <h3>Already have an account? <a href="index.html">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
